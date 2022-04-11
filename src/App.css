@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+    --main-green: #00DACC;
+    --gray-support: #313144;
+    --blue-support: #012033;
+}
+
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: max(30px,3vw);
+    color: white;
+    background-color: var(--gray-support);
+}
+div.content {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+header {  
+    background: linear-gradient(45deg,
+    var(--blue-support) 22%,
+    var(--main-green) 0 44%,
+    var(--gray-support) 0);
+    font-family: "Poppins", sans-serif;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    line-height: 80px;
+}
+
+.header-text {
+    font-size: 2.7vw;
+    letter-spacing: 1vw;
+    color: var(--blue-support);
+    width: 100%;
+}
+
+.button {
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-right: 1%;
+    width: 100%;
+    max-width: 300px;
+    height: 60%;
+    background-color: var(--main-green);
+    border-color: var(--main-green);
+    border-style: solid;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: var(--blue-support);
+}
+
+
+#metis-logo-horizontal {
+    width: 20%;
+    margin-right: 2%;
+
+}
+
+hr {
+    border-style: solid;
+    border-width: 3px;
+    margin: 0;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 55%;
+}
+
+#metis-logo {
+    height: max(25px,2.8vw);
+}
+
+.accent {
+    color: var(--main-green);
+    font-weight: 700;
+}
+
